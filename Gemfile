@@ -41,6 +41,8 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Rspec Testing framework
   gem 'rspec-rails', '~> 5.1.2'
+  # Replaces Rails fixtures for generating data to use in the tests
+  gem 'factory_bot_rails'
 end
 
 group :development do
