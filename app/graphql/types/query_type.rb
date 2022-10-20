@@ -18,6 +18,10 @@ module Types
       ).joins(:debit_account, :credit_account)
     end
 
+    field :current_user_accounts, [Types::AccountType], null: false
+
+    def current_user_accounts
+      Account.where(user_id: User::DEFAULT_USER_ID)
     end
   end
 end
