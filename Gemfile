@@ -33,6 +33,9 @@ gem 'net-imap', require: false
 gem 'net-pop', require: false
 gem 'net-smtp', require: false
 
+# Use of GraphQL to improve data querying
+gem 'graphql', '~> 2.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -48,6 +51,8 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   # Ruby static code analyzer (a.k.a. linter) and code formatter
   gem 'rubocop', '~> 1.36', require: false
+  # GraphQL Rails development gem
+  gem 'graphiql-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
