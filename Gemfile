@@ -53,6 +53,8 @@ group :development do
   gem 'rubocop', '~> 1.36', require: false
   # GraphQL Rails development gem
   gem 'graphiql-rails'
+  # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+  gem 'rack-cors'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
