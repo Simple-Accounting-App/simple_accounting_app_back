@@ -4,7 +4,7 @@ module Mutations
     # Necessary arguments
     argument :debit_account_id, ID, required: true
     argument :credit_account_id, ID, required: true
-    argument :amount, Float, required: true
+    argument :amount, String, required: true
     argument :transfer_date, GraphQL::Types::ISO8601DateTime, required: true
 
     # Return fields: state (success & errors) as well as the updated object.
