@@ -1,5 +1,7 @@
 AllCops:
   NewCops: enable
+  Exclude:
+  - 'bin/*'
 
 # Adding exceptions to Rubocop's offenses
 Layout/EndOfLine:
